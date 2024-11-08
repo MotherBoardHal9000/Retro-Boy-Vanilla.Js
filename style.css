@@ -45,7 +45,7 @@ div {
 }
 
 header {
-  max-width: 100vw;
+  width: 100vw;
   height: 130px;
   position: relative;
   background-color: #308ac5;
@@ -123,13 +123,14 @@ header ul li {
 }
 /*section1*/
 .section1 {
-  max-width: 100vw;
+  width: 100vw;
   height: 1000px;
   background-color: #308ac5;
   position: relative;
 }
 
 .section1Contents {
+  width: 1600px;
   height: 1000px;
   position: absolute;
   left: 50%;
@@ -141,7 +142,7 @@ header ul li {
   width: 800px;
   height: 800px;
   position: absolute;
-  right: -600px;
+  right: 0px;
   bottom: 0px;
 }
 
@@ -194,14 +195,14 @@ header ul li {
   height: 400px;
   position: absolute;
   bottom: 150px;
-  left: -900px;
+  left: -200px;
 }
 
 #Cloud img:nth-child(2) {
   width: 420px;
   height: 400px;
   position: absolute;
-  right: -960px;
+  right: -160px;
   top: -80px;
   z-index: 10;
 }
@@ -211,13 +212,13 @@ header ul li {
   width: 200px;
   height: 250px;
   top: 170px;
-  right: -920px;
+  right: -125px;
   display: none;
 }
 
 /*section2*/
 .section2 {
-  max-width: 100vw;
+  width: 100vw;
   height: 400px;
   position: relative;
 }
@@ -233,7 +234,7 @@ header ul li {
 }
 /*section3*/
 .section3 {
-  max-width: 100vw;
+  width: 100vw;
   height: 700px;
   position: relative;
 }
@@ -298,6 +299,7 @@ header ul li {
 
 /*section4*/
 .section4 {
+  min-width: 1920px;
   max-width: 100vw;
   height: 2050px;
   position: relative;
@@ -309,7 +311,7 @@ header ul li {
   margin: 0 auto;
 }
 .section4Contents .margin {
-  width: 1600px;
+  min-width: 1600px;
   max-width: 80vw;
   height: 80px;
   display: block;
@@ -377,6 +379,7 @@ header ul li {
 
 /*sectrion5*/
 .section5 {
+  min-width: 1920px;
   max-width: 100vw;
   height: 1900px;
   position: relative;
@@ -431,12 +434,12 @@ header ul li {
 }
 
 .PlanBox ul li {
-  border: 1px solid red;
   font-size: 1.3rem;
 }
 
 /*footer*/
 .footer {
+  min-width: 1920px;
   max-width: 100vw;
   height: 750px;
   border-top: 7px solid black;
@@ -445,6 +448,7 @@ header ul li {
 }
 
 .floorBack {
+  min-width: 1920px;
   max-width: 100vw;
   height: 50px;
   background-image: url(./img/SVG/FloorBrick.svg);
@@ -486,7 +490,7 @@ header ul li {
 }
 
 .footerContents {
-  width: 1600px;
+  min-width: 1600px;
   max-width: 100%;
   height: 500px;
   position: absolute;
@@ -578,22 +582,21 @@ header ul li {
 
 @media (min-width: 768px) and (max-width: 1200px) {
   #wrap {
-    width: 240px;
+    min-width: 250px;
     height: 100%;
     background-color: #edf2f7;
-    left: -240px;
+    left: -250px;
     position: fixed;
     z-index: 10;
     display: block;
     overflow: hidden;
-    transition: all 0.01ms;
   }
 
   #wrap ul {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding-top: 80px;
+    padding-top: 30px;
     position: absolute;
     left: 0px;
     width: 130px;
@@ -620,11 +623,10 @@ header ul li {
     padding: 40px;
     position: absolute;
     cursor: pointer;
-    z-index: 9;
   }
 
   .header {
-    width: 100vw;
+    min-width: 100vw;
     position: relative;
   }
 
@@ -633,14 +635,14 @@ header ul li {
   }
 
   .section1 {
-    width: 100vw;
+    min-width: 100vw;
     height: 1000px;
     background-color: #308ac5;
     position: relative;
   }
 
   .section1Contents {
-    width: 80vw;
+    min-width: 80vw;
     height: 1000px;
     position: absolute;
     left: 50%;
@@ -661,13 +663,13 @@ header ul li {
     background-image: url(./img/SVG/redBrickBackMobile.svg);
     background-repeat: repeat;
     min-width: 80vw;
-    max-width: 100vw;
     height: 800px;
     position: absolute;
   }
 
   .redBrickBoard {
-    width: 80vw;
+    min-width: 80vw;
+    max-width: 90vw;
     height: 680px;
     background-color: var(--color-white);
     border: 5px solid var(--color-black);
@@ -728,7 +730,7 @@ header ul li {
   }
 
   .section2 {
-    width: 100vw;
+    min-width: 100vw;
     height: 400px;
     position: relative;
   }
@@ -744,7 +746,7 @@ header ul li {
   }
 
   .section3 {
-    width: 100vw;
+    min-width: 100vw;
     height: 1600px;
     position: relative;
   }
@@ -774,7 +776,7 @@ header ul li {
   }
 
   .character-boxes {
-    width: 75vw;
+    min-width: 75vw;
     height: 390px;
     background-color: #edf2f7;
     position: relative;
@@ -794,13 +796,14 @@ header ul li {
   }
   /*section4*/
   .section4 {
-    width: 100vw;
+    min-width: 100vw;
     height: 2300px;
     position: relative;
   }
 
   .section4Contents {
-    width: 80vw;
+    min-width: 80vw;
+    max-width: 80vw;
     height: 1000px;
     position: absolute;
     display: flex;
@@ -820,13 +823,13 @@ header ul li {
   }
 
   .section4Box1 img {
-    width: 80vw;
+    min-width: 80vw;
     width: 80vw;
     height: 500px;
   }
 
   .section4Side1 {
-    width: 80vw;
+    min-width: 80vw;
     height: 300px;
     background-color: #ff3535;
     color: #edf2f7;
@@ -834,13 +837,13 @@ header ul li {
   }
 
   .section4Box2 {
-    width: 80vw;
+    min-width: 80vw;
     height: 600px;
   }
 
   .section4Box2 img {
-    width: 80vw;
-
+    min-width: 80vw;
+    max-width: 90vw;
     height: 500px;
   }
 
@@ -849,7 +852,7 @@ header ul li {
   }
 
   .section4Side2 {
-    width: 80vw;
+    min-width: 80vw;
     height: 300px;
     background-color: #ffd735;
     color: var(--color-white);
@@ -857,7 +860,7 @@ header ul li {
   }
 
   .section4Box3 img {
-    width: 80vw;
+    min-width: 80vw;
     height: 500px;
   }
 
@@ -866,7 +869,7 @@ header ul li {
   }
 
   .section4Side3 {
-    width: 80vw;
+    min-width: 80vw;
     height: 300px;
     background-color: #8543a0;
     color: var(--color-white);
@@ -875,7 +878,7 @@ header ul li {
 
   /*sectrion5*/
   .section5 {
-    width: 100vw;
+    min-width: 100vw;
     height: 1800px;
     position: relative;
   }
@@ -935,14 +938,14 @@ header ul li {
 
   /*footer*/
   .footer {
-    width: 100vw;
+    min-width: 100vw;
     height: 1600px;
     border-top: 7px solid black;
     background-color: #308ac5;
   }
 
   .floorBack {
-    width: 100vw;
+    min-width: 100vw;
     height: 50px;
     background-image: url(./img/SVG/FloorBrick.svg);
     bottom: 0px;
@@ -984,7 +987,7 @@ header ul li {
   }
 
   .footerContents {
-    width: 80vw;
+    min-width: 80vw;
     height: 57%;
     position: absolute;
     top: 450px;
@@ -1081,23 +1084,21 @@ header ul li {
 /*@Tablet,Mobile 768px*/
 @media screen and (max-width: 767px) {
   #wrap {
-    width: 240px;
+    min-width: 250px;
     height: 100%;
     background-color: #edf2f7;
     left: -250px;
-    position: absolute;
     position: fixed;
     z-index: 10;
     display: block;
     overflow: hidden;
-    transition: all 0.01ms;
   }
 
   #wrap ul {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding-top: 80px;
+    padding-top: 30px;
     position: absolute;
     left: 0px;
     width: 130px;
@@ -1124,11 +1125,10 @@ header ul li {
     padding: 40px;
     position: absolute;
     cursor: pointer;
-    z-index: 9;
   }
 
   .header {
-    width: 100vw;
+    min-width: 100vw;
     height: 100px;
     position: relative;
   }
@@ -1142,14 +1142,14 @@ header ul li {
   }
 
   .section1 {
-    width: 100vw;
+    min-width: 100vw;
     height: 900px;
     background-color: #308ac5;
     position: relative;
   }
 
   .section1Contents {
-    width: 80vw;
+    min-width: 80vw;
     height: 1000px;
     position: absolute;
     left: 50%;
@@ -1175,7 +1175,8 @@ header ul li {
   }
 
   .redBrickBoard {
-    width: 80vw;
+    min-width: 80vw;
+    max-width: 90vw;
     height: 650px;
     background-color: var(--color-white);
     border: 5px solid var(--color-black);
@@ -1236,7 +1237,7 @@ header ul li {
   }
 
   .section2 {
-    width: 100vw;
+    min-width: 100vw;
     height: 400px;
     position: relative;
   }
@@ -1301,13 +1302,14 @@ header ul li {
   }
   /*section4*/
   .section4 {
-    width: 100vw;
+    min-width: 100vw;
     height: 1700px;
     position: relative;
   }
 
   .section4Contents {
-    width: 80vw;
+    min-width: 80vw;
+    max-width: 80vw;
     height: 1000px;
     position: absolute;
     display: flex;
@@ -1327,13 +1329,13 @@ header ul li {
   }
 
   .section4Box1 img {
-    width: 80vw;
+    min-width: 80vw;
     width: 80vw;
     height: 300px;
   }
 
   .section4Side1 {
-    width: 80vw;
+    min-width: 80vw;
     height: 300px;
     background-color: #ff3535;
     color: #edf2f7;
@@ -1341,13 +1343,13 @@ header ul li {
   }
 
   .section4Box2 {
-    width: 80vw;
+    min-width: 80vw;
     height: 600px;
   }
 
   .section4Box2 img {
-    width: 80vw;
-
+    min-width: 80vw;
+    max-width: 90vw;
     height: 300px;
   }
 
@@ -1356,7 +1358,7 @@ header ul li {
   }
 
   .section4Side2 {
-    width: 80vw;
+    min-width: 80vw;
     height: 300px;
     background-color: #ffd735;
     color: var(--color-white);
@@ -1373,7 +1375,7 @@ header ul li {
   }
 
   .section4Side3 {
-    width: 80vw;
+    min-width: 80vw;
     height: 300px;
     background-color: #8543a0;
     color: var(--color-white);
@@ -1382,7 +1384,7 @@ header ul li {
 
   /*sectrion5*/
   .section5 {
-    width: 100vw;
+    min-width: 100vw;
     height: 1800px;
     position: relative;
   }
@@ -1442,14 +1444,14 @@ header ul li {
 
   /*footer*/
   .footer {
-    width: 100vw;
+    min-width: 100vw;
     height: 1600px;
     border-top: 7px solid black;
     background-color: #308ac5;
   }
 
   .floorBack {
-    width: 100vw;
+    min-width: 100vw;
     height: 50px;
     background-image: url(./img/SVG/FloorBrick.svg);
     bottom: 0px;
@@ -1532,7 +1534,7 @@ header ul li {
     margin-right: 20px;
   }
   .footerContents2 {
-    width: 80vw;
+    min-width: 80vw;
     height: 400px;
     color: white;
     bottom: 0px;
