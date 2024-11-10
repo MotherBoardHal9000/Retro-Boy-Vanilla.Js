@@ -59,13 +59,14 @@ header {
   position: fixed;
   z-index: 10;
   display: none;
+  transition: all 1ms;
 }
 
 #wrap ul {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding-top: 30px;
+  margin-top: 60px;
   position: absolute;
   left: 0px;
   width: 130px;
